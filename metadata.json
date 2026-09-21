@@ -1,0 +1,6 @@
+{
+  "name": "Mun-Gi Jeon Portfolio",
+  "description": "Portfolio of Mun-Gi Jeon - AI & Multimodal Document Intelligence Researcher specializing in Vision-Language Models, OCR, and RAG systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
