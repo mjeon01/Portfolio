@@ -3,7 +3,7 @@ import { Language } from '../types';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { FileText, GraduationCap, MapPin, Mail } from 'lucide-react';
 import { motion } from 'motion/react';
-import portraitTallImg from '../assets/images/mungi_portrait_tall_1789965113569.jpg';
+import { PhotoSlot } from './PhotoSlot';
 
 interface AboutSectionProps {
   lang: Language;
@@ -98,12 +98,12 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ lang, onOpenCv }) =>
             transition={{ duration: 0.55 }}
             className="md:col-span-6 lg:col-span-5 flex justify-center"
           >
-            <div className="w-full max-w-sm md:max-w-none rounded-2xl overflow-hidden shadow-xl border border-neutral-200/90 aspect-3/4 bg-neutral-950 group">
-              <img
-                src={portraitTallImg}
+            <div className="w-full max-w-sm md:max-w-none rounded-2xl overflow-hidden shadow-xl border border-neutral-200/90 aspect-3/4 bg-neutral-100 group">
+              <PhotoSlot
+                src={PERSONAL_INFO.photos.about}
                 alt={`${PERSONAL_INFO.name[lang]} Portrait`}
-                className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-500"
-                referrerPolicy="no-referrer"
+                variant="portrait"
+                lang={lang}
               />
             </div>
           </motion.div>

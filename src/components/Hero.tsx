@@ -3,7 +3,7 @@ import { Language } from '../types';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { Github, Linkedin, Mail, Copy, Check, FileText, ArrowDown } from 'lucide-react';
 import { motion } from 'motion/react';
-import portraitImg from '../assets/images/mungi_portrait_square_1789965101214.jpg';
+import { PhotoSlot } from './PhotoSlot';
 
 interface HeroProps {
   lang: Language;
@@ -34,11 +34,11 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenCv }) => {
             transition={{ duration: 0.3 }}
             className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-lg border-4 border-white ring-1 ring-neutral-200/80 bg-neutral-100"
           >
-            <img
-              src={portraitImg}
+            <PhotoSlot
+              src={PERSONAL_INFO.photos.hero}
               alt={PERSONAL_INFO.name[lang]}
-              className="w-full h-full object-cover object-center"
-              referrerPolicy="no-referrer"
+              variant="circle"
+              lang={lang}
             />
           </motion.div>
         </motion.div>
