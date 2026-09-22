@@ -1,4 +1,6 @@
 import { TechCard, WorkExperience, ProjectItem, PublicationItem, AwardItem } from '../types';
+import profileImg from '../assets/images/profile.png';
+import fullBodyImg from '../assets/images/full-body.png';
 
 export const PERSONAL_INFO = {
   name: {
@@ -36,10 +38,9 @@ export const PERSONAL_INFO = {
     en: 'Busan University of Foreign Studies',
     ko: '부산외국어대학교',
   },
-  // Drop files in public/photos/ later, then set these to '/photos/hero.jpg' and '/photos/about.jpg'.
   photos: {
-    hero: null as string | null,
-    about: null as string | null,
+    hero: profileImg,
+    about: fullBodyImg,
   },
   education: {
     school: {

@@ -98,7 +98,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ lang, onOpenCv }) =>
             transition={{ duration: 0.55 }}
             className="md:col-span-6 lg:col-span-5 flex justify-center"
           >
-            <div className="w-full max-w-sm md:max-w-none rounded-2xl overflow-hidden shadow-xl border border-neutral-200/90 aspect-3/4 bg-neutral-100 group">
+            <div className="w-full max-w-sm md:max-w-none rounded-2xl overflow-hidden shadow-xl border border-neutral-200/90 aspect-4/5 bg-neutral-100 group">
               <PhotoSlot
                 src={PERSONAL_INFO.photos.about}
                 alt={`${PERSONAL_INFO.name[lang]} Portrait`}

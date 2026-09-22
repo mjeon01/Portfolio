@@ -15,7 +15,7 @@ export const PhotoSlot: React.FC<PhotoSlotProps> = ({ src, alt, variant, lang })
       <img
         src={src}
         alt={alt}
-        className={`w-full h-full object-cover object-center ${
+        className={`block w-full h-full object-cover object-center ${
           variant === 'portrait' ? 'group-hover:scale-103 transition-transform duration-500' : ''
         }`}
       />
